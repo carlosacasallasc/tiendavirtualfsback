@@ -8,41 +8,41 @@ import javax.persistence.Id;
 public class Proveedores {
 
 	@Id
-	private Long nitProveedor;
-	private String ciudadProveedor;
-	private String direccionProveedor;
-	private String nombreProveedor;
-	private String telefonoProveedor;
+	private long nit_proveedor;
+	private String ciudad_proveedor;
+	private String direccion_proveedor;
+	private String nombre_provedor;
+	private String telefono_proveedor;
 	
 	
-	public Long getNitProveedor() {
-		return nitProveedor;
+	public long getNit_proveedor() {
+		return nit_proveedor;
 	}
-	public void setNitProveedor(Long nitProveedor) {
-		this.nitProveedor = nitProveedor;
+	public void setNit_proveedor(long nit_proveedor) {
+		this.nit_proveedor = nit_proveedor;
 	}
-	public String getCiudadProveedor() {
-		return ciudadProveedor;
+	public String getCiudad_proveedor() {
+		return ciudad_proveedor;
 	}
-	public void setCiudadProveedor(String ciudadProveedor) {
-		this.ciudadProveedor = ciudadProveedor;
+	public void setCiudad_proveedor(String ciudad_proveedor) {
+		this.ciudad_proveedor = ciudad_proveedor;
 	}
-	public String getDireccionProveedor() {
-		return direccionProveedor;
+	public String getDireccion_proveedor() {
+		return direccion_proveedor;
 	}
-	public void setDireccionProveedor(String direccionProveedor) {
-		this.direccionProveedor = direccionProveedor;
+	public void setDireccion_proveedor(String direccion_proveedor) {
+		this.direccion_proveedor = direccion_proveedor;
 	}
-	public String getNombreProveedor() {
-		return nombreProveedor;
+	public String getNombre_provedor() {
+		return nombre_provedor;
 	}
-	public void setNombreProveedor(String nombreProveedor) {
-		this.nombreProveedor = nombreProveedor;
+	public void setNombre_provedor(String nombre_provedor) {
+		this.nombre_provedor = nombre_provedor;
 	}
-	public String getTelefonoProveedor() {
-		return telefonoProveedor;
+	public String getTelefono_proveedor() {
+		return telefono_proveedor;
 	}
-	public void setTelefonoProveedor(String telefonoProveedor) {
-		this.telefonoProveedor = telefonoProveedor;
+	public void setTelefono_proveedor(String telefono_proveedor) {
+		this.telefono_proveedor = telefono_proveedor;
 	}
 }

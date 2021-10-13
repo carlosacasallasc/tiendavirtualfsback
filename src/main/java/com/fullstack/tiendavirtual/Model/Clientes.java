@@ -7,41 +7,42 @@ import javax.persistence.Id;
 public class Clientes {
 	
 	@Id
-	private Long cedulaCliente;
-	private String direccionCliente;
-	private String emailCliente;
-	private String nombreCliente;
-	private String telefonoCliente;
+	private long cedula_cliente;
+	private String direccion_cliente;
+	private String email_cliente;
+	private String nombre_cliente;
+	private String telefono_cliente;
 	
-	public Long getCedulaCliente() {
-		return cedulaCliente;
+	
+	public long getCedula_cliente() {
+		return cedula_cliente;
 	}
-	public void setCedulaCliente(Long cedulaCliente) {
-		this.cedulaCliente = cedulaCliente;
+	public void setCedula_cliente(long cedula_cliente) {
+		this.cedula_cliente = cedula_cliente;
 	}
-	public String getDireccionCliente() {
-		return direccionCliente;
+	public String getDireccion_cliente() {
+		return direccion_cliente;
 	}
-	public void setDireccionCliente(String direccionCliente) {
-		this.direccionCliente = direccionCliente;
+	public void setDireccion_cliente(String direccion_cliente) {
+		this.direccion_cliente = direccion_cliente;
 	}
-	public String getEmailCliente() {
-		return emailCliente;
+	public String getEmail_cliente() {
+		return email_cliente;
 	}
-	public void setEmailCliente(String emailCliente) {
-		this.emailCliente = emailCliente;
+	public void setEmail_cliente(String email_cliente) {
+		this.email_cliente = email_cliente;
 	}
-	public String getNombreCliente() {
-		return nombreCliente;
+	public String getNombre_cliente() {
+		return nombre_cliente;
 	}
-	public void setNombreCliente(String nombreCliente) {
-		this.nombreCliente = nombreCliente;
+	public void setNombre_cliente(String nombre_cliente) {
+		this.nombre_cliente = nombre_cliente;
 	}
-	public String getTelefonoCliente() {
-		return telefonoCliente;
+	public String getTelefono_cliente() {
+		return telefono_cliente;
 	}
-	public void setTelefonoCliente(String telefonoCliente) {
-		this.telefonoCliente = telefonoCliente;
+	public void setTelefono_cliente(String telefono_cliente) {
+		this.telefono_cliente = telefono_cliente;
 	}
 
 }
