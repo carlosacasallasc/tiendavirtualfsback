@@ -1,6 +1,8 @@
 package com.fullstack.tiendavirtual.Api;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,5 +40,10 @@ public class ProductosApi {
 	@PutMapping("productos/actualizar")
 	public void actualizar(@RequestBody Productos productos) {
 		productosDAO.save(productos);
+	}
+	
+	@GetMapping("productos/listarid/{id}")
+	public Optional<Productos> listarId(@PathVariable("id") Long id){
+		return productosDAO.findById(id);
 	}
 }

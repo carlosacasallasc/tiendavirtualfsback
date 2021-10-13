@@ -6,13 +6,14 @@ import javax.persistence.Id;
 @Entity
 public class Productos {
 
+	
 	@Id
+	private Long codigoProducto;
 	private Long nitProveedor;
 	private Integer IvaCompra;
 	private String nombreProducto;
 	private Integer precioCompra;
 	private Integer precioVenta;
-	private Long codigoProducto;
 	
 	public Productos(Long codigoProducto,String nombreProducto, Long nitProveedor, Integer precioCompra, Integer ivaCompra,   
 			Integer precioVenta) {
