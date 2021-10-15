@@ -8,63 +8,63 @@ public class Productos {
 
 	
 	@Id
-	private Long codigoProducto;
-	private Long nitProveedor;
-	private Integer IvaCompra;
-	private String nombreProducto;
-	private Integer precioCompra;
-	private Integer precioVenta;
+	private Long codigo_producto;
+	private double iva_compra;
+	private Long nit_proveedor;
+	private String nombre_producto;
+	private double precio_compra;
+	private double precio_venta;
 	
-	public Productos(Long codigoProducto,String nombreProducto, Long nitProveedor, Integer precioCompra, Integer ivaCompra,   
-			Integer precioVenta) {
+	public Productos(Long codigo_producto,String nombre_producto, Long nit_proveedor, double precio_compra, double iva_compra,   
+			double precio_venta) {
 		super();
-		IvaCompra = ivaCompra;
-		this.nitProveedor = nitProveedor;
-		this.nombreProducto = nombreProducto;
-		this.precioCompra = precioCompra;
-		this.precioVenta = precioVenta;
-		this.codigoProducto = codigoProducto;
+		this.iva_compra = iva_compra;
+		this.nit_proveedor = nit_proveedor;
+		this.nombre_producto = nombre_producto;
+		this.precio_compra = precio_compra;
+		this.precio_venta = precio_venta;
+		this.codigo_producto = codigo_producto;
 		
 	}
 	
 	public Productos() {
-		
+		super();
 	}
 	
 	public Long getCodigoProducto() {
-		return codigoProducto;
+		return codigo_producto;
 	}
-	public void setCodigoProducto(Long codigoProducto) {
-		this.codigoProducto = codigoProducto;
+	public void setCodigoProducto(Long codigo_producto) {
+		this.codigo_producto = codigo_producto;
 	}
-	public Integer getIvaCompra() {
-		return IvaCompra;
+	public double getIvaCompra() {
+		return iva_compra;
 	}
-	public void setIvaCompra(Integer ivaCompra) {
-		IvaCompra = ivaCompra;
+	public void setIvaCompra(double iva_compra) {
+		this.iva_compra = iva_compra;
 	}
 	public Long getNitProveedor() {
-		return nitProveedor;
+		return nit_proveedor;
 	}
-	public void setNitProveedor(Long nitProveedor) {
-		this.nitProveedor = nitProveedor;
+	public void setNitProveedor(Long nit_proveedor) {
+		this.nit_proveedor = nit_proveedor;
 	}
 	public String getNombreProducto() {
-		return nombreProducto;
+		return nombre_producto;
 	}
 	public void setNombreProducto(String nombreProducto) {
-		this.nombreProducto = nombreProducto;
+		this.nombre_producto = nombreProducto;
 	}
-	public Integer getPrecioCompra() {
-		return precioCompra;
+	public double getPrecioCompra() {
+		return precio_compra;
 	}
-	public void setPrecioCompra(Integer precioCompra) {
-		this.precioCompra = precioCompra;
+	public void setPrecioCompra(Integer precio_compra) {
+		this.precio_compra = precio_compra;
 	}
-	public Integer getPrecioVenta() {
-		return precioVenta;
+	public double getPrecioVenta() {
+		return precio_venta;
 	}
-	public void setPrecioVenta(Integer precioVenta) {
-		this.precioVenta = precioVenta;
+	public void setPrecioVenta(Integer precio_venta) {
+		this.precio_venta = precio_venta;
 	}
 }
